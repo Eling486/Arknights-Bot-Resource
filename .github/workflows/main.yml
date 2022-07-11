@@ -60,8 +60,8 @@ jobs:
       - name: cd
         shell: bash
         run: |
-          ls -a ./Arknights-Bot-Resource-Bot
           ls -a ./Arknights-Bot-Resource-Bot/tmp
+          ls -a ./Arknights-Bot-Resource-Bot/tmp/all
           rm -rf ./Arknights-Bot-Resource-Bot
           python ./levels_gen.py
       - name: Commit changes
